@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFleet - The Future of Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-rocket"></i> FoodFleet</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="restaurant.html">Restaurants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">Crave it? Get it.</h1>
+                <p>Find the best food from <span id="typewriter"></span></p>
+                <div class="search-container animate-on-scroll">
+                    <input type="text" id="mainSearch" placeholder="Enter a dish or restaurant">
+                    <button class="btn btn-gradient"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="categories-section">
+            <h2 class="section-title animate-on-scroll">Top Categories</h2>
+            <div class="category-grid">
+                <div class="category-card animate-on-scroll">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <span>Pizza</span>
+                </div>
+                <div class="category-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>Burgers</span>
+                </div>
+                <div class="category-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <i class="fa-solid fa-pepper-hot"></i>
+                    <span>Indian</span>
+                </div>
+                <div class="category-card animate-on-scroll" style="animation-delay: 0.3s;">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                    <span>Asian</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-restaurants">
+            <h2 class="section-title animate-on-scroll">Popular Near You</h2>
+            <div class="restaurant-grid">
+                <div class="restaurant-card animate-on-scroll">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-6abf9df8ca80?w=500&auto=format&fit=crop" alt="Healthy Food">
+                        <span class="badge">Healthy</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Green Bowl</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Satellite, Ahmedabad</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.8 (300+)
+                        </div>
+                        <a href="restaurant.html" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+                <div class="restaurant-card animate-on-scroll" style="animation-delay: 0.1s;">
+                     <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&fit=crop" alt="Pizza">
+                        <span class="badge">Pizza</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cosmic Slice</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Prahlad Nagar, Ahmedabad</p>
+                         <div class="rating">
+                           <i class="fas fa-star"></i> 4.6 (510+)
+                        </div>
+                        <a href="restaurant.html" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+                <div class="restaurant-card animate-on-scroll" style="animation-delay: 0.2s;">
+                     <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&auto=format&fit=crop" alt="Fine Dining">
+                        <span class="badge">Fine Dining</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Velvet Fork</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> C.G. Road, Ahmedabad</p>
+                         <div class="rating">
+                           <i class="fas fa-star"></i> 4.9 (1k+)
+                        </div>
+                        <a href="restaurant.html" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-content animate-on-scroll">
+                <h2>Get Our App</h2>
+                <p>Experience the best of FoodFleet on the go. Faster ordering, live tracking, and exclusive deals.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-store"><i class="fa-brands fa-apple"></i> App Store</a>
+                    <a href="#" class="btn-store"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 class="logo-text"><i class="fa-solid fa-rocket"></i> FoodFleet</h3>
+                <p>The future of food delivery is here. Fast, reliable, and always delicious.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Become a Rider</a></li>
+                    <li><a href="#">Add Your Restaurant</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Join our Newsletter</h3>
+                <form action="#">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email...">
+                    <button type="submit" class="btn btn-gradient">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 FoodFleet | Designed in Ahmedabad, India with <i class="fas fa-heart"></i>
+        </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

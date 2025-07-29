@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - FoodFleet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-rocket"></i> FoodFleet</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="restaurant.html">Restaurants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title animate-on-scroll">Explore All Dishes</h1>
+        <div class="search-container menu-search animate-on-scroll">
+            <input type="text" id="menuSearch" placeholder="Search for your favorite food...">
+        </div>
+        
+        <div class="food-grid">
+            <div class="food-item animate-on-scroll" data-name="pizza">
+                <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=500&auto=format&fit=crop" alt="Pizza">
+                <h3>Spicy Pepperoni Pizza</h3>
+                <p>The ultimate classic with a fiery kick.</p>
+                <span class="price">$14.50</span>
+            </div>
+            <div class="food-item animate-on-scroll" style="animation-delay: 0.1s;" data-name="burger">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&auto=format&fit=crop" alt="Burger">
+                <h3>Ultimate Cheeseburger</h3>
+                <p>Double patty, cheddar cheese, and secret sauce.</p>
+                <span class="price">$12.99</span>
+            </div>
+            <div class="food-item animate-on-scroll" style="animation-delay: 0.2s;" data-name="sushi">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500&auto=format&fit=crop" alt="Sushi">
+                <h3>Dragon Roll Sushi</h3>
+                <p>Crispy shrimp tempura, avocado, and eel sauce.</p>
+                <span class="price">$18.00</span>
+            </div>
+             <div class="food-item animate-on-scroll" style="animation-delay: 0.3s;" data-name="ramen">
+                <img src="https://images.unsplash.com/photo-1612874421334-6279f4dfc516?w=500&auto=format&fit=crop" alt="Ramen">
+                <h3>Tonkotsu Ramen</h3>
+                <p>Rich pork broth with chashu pork and soft egg.</p>
+                <span class="price">$16.20</span>
+            </div>
+             <div class="food-item animate-on-scroll" data-name="biryani">
+                <img src="https://plus.unsplash.com/premium_photo-1664189387978-299fd214a66a?w=500&auto=format&fit=crop" alt="Biryani">
+                <h3>Hyderabadi Biryani</h3>
+                <p>Aromatic basmati rice with spiced chicken.</p>
+                <span class="price">$15.50</span>
+            </div>
+             <div class="food-item animate-on-scroll" style="animation-delay: 0.1s;" data-name="tacos">
+                <img src="https://images.unsplash.com/photo-1565299589934-7a54a536f264?w=500&auto=format&fit=crop" alt="Tacos">
+                <h3>Carne Asada Tacos</h3>
+                <p>Grilled steak tacos with fresh salsa and cilantro.</p>
+                <span class="price">$11.75</span>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="contact">
+        </footer>
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
