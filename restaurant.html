@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Details - FoodFleet</title>
+    <title>Cosmic Slice - Restaurant Details</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header is the same as other pages -->
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo"><i class="fas fa-utensils"></i> FoodFleet</a>
+            <a href="index.html" class="logo"><i class="fa-solid fa-rocket"></i> FoodFleet</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -28,113 +29,131 @@
         </nav>
     </header>
 
-    <main class="restaurant-detail-page">
-        <div class="restaurant-header">
-            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&auto=format&fit=crop" alt="Restaurant Banner" class="restaurant-banner">
-            <div class="restaurant-info">
-                <h1>The Grand Pizzeria</h1>
-                <p>Classic Italian & Wood-fired Pizzas</p>
-                <div class="rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    <span>4.6 (500+ ratings)</span>
+    <main>
+        <!-- Restaurant Header Banner -->
+        <section class="restaurant-hero" style="background-image: linear-gradient(rgba(18,18,18,0.7), rgba(18,18,18,1)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&auto=format&fit=crop');">
+            <div class="restaurant-hero-content animate-on-scroll">
+                <h1 class="restaurant-title">Cosmic Slice Pizzeria</h1>
+                <p class="restaurant-cuisine">Italian, Pizza & Fast Food</p>
+                <div class="restaurant-meta">
+                    <span class="rating"><i class="fas fa-star"></i> 4.6 (510+)</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> Prahlad Nagar, Ahmedabad</span>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="restaurant-body">
-            <div class="restaurant-menu">
-                <h2 class="section-title">Menu</h2>
-                <div class="restaurant-menu-grid">
-                    <div class="menu-item-card">
-                        <img src="https://plus.unsplash.com/premium_photo-1673439304183-8869b2748873?w=500&auto=format&fit=crop" alt="Pizza">
-                        <div>
-                            <h4>Margherita Pizza</h4>
-                            <p>Fresh mozzarella, basil, and San Marzano tomatoes.</p>
-                            <span class="price">$18.00</span>
+        <!-- Main Restaurant Content -->
+        <div class="restaurant-page-container">
+            <div class="restaurant-main-content">
+                <h2 class="section-title animate-on-scroll">Our Menu</h2>
+                <div class="restaurant-menu-list">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-list-item animate-on-scroll">
+                        <div class="item-details">
+                            <h4>Galaxy Supreme Pizza</h4>
+                            <p>Pepperoni, mushrooms, onions, green peppers, and black olives.</p>
                         </div>
-                        <button class="btn btn-primary add-to-cart-btn">Add</button>
+                        <div class="item-actions">
+                            <span class="price"> ₹ 450.00 </span>
+                            <button class="btn btn-gradient add-to-cart-btn">Add</button>
+                        </div>
                     </div>
-                    <div class="menu-item-card">
-                        <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?w=500&auto=format&fit=crop" alt="Pizza">
-                        <div>
-                            <h4>Pepperoni Passion</h4>
-                            <p>Loaded with spicy pepperoni and mozzarella cheese.</p>
-                            <span class="price">$22.50</span>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-list-item animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="item-details">
+                            <h4>Meteor Meatballs</h4>
+                            <p>Classic spaghetti with giant, savory meatballs in marinara sauce.</p>
                         </div>
-                        <button class="btn btn-primary add-to-cart-btn">Add</button>
+                        <div class="item-actions">
+                            <span class="price"> ₹ 300.00 </span>
+                            <button class="btn btn-gradient add-to-cart-btn">Add</button>
+                        </div>
                     </div>
-                    <div class="menu-item-card">
-                        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&auto=format&fit=crop" alt="Pasta">
-                        <div>
-                            <h4>Spaghetti Carbonara</h4>
-                            <p>Creamy egg sauce with pancetta and parmesan.</p>
-                            <span class="price">$20.00</span>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-list-item animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="item-details">
+                            <h4>Stardust Garlic Bread</h4>
+                            <p>Cheesy garlic breadsticks served with a side of marinara for dipping.</p>
                         </div>
-                        <button class="btn btn-primary add-to-cart-btn">Add</button>
+                        <div class="item-actions">
+                            <span class="price"> ₹ 50.00 </span>
+                            <button class="btn btn-gradient add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                     <!-- Menu Item 4 -->
+                    <div class="menu-list-item animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="item-details">
+                            <h4>Nebula Nutella Calzone</h4>
+                            <p>A warm, sweet calzone filled with Nutella and dusted with powdered sugar.</p>
+                        </div>
+                        <div class="item-actions">
+                            <span class="price">$12.00</span>
+                            <button class="btn btn-gradient add-to-cart-btn">Add</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <aside class="restaurant-sidebar">
-                <div class="sidebar-widget">
+                <div class="sidebar-widget animate-on-scroll">
                     <h3><i class="fas fa-clock"></i> Opening Hours</h3>
                     <ul>
-                        <li><span>Monday-Friday</span><span>11am - 10pm</span></li>
-                        <li><span>Saturday</span><span>11am - 11pm</span></li>
-                        <li><span>Sunday</span><span>Closed</span></li>
+                        <li><span>Monday-Friday</span><span>11:00 AM - 11:00 PM</span></li>
+                        <li><span>Saturday</span><span>11:00 AM - 1:00 AM</span></li>
+                        <li><span>Sunday</span><span>5:00 PM - 11:00 PM</span></li>
                     </ul>
                 </div>
-                <div class="sidebar-widget">
-                    <h3><i class="fas fa-star"></i> Customer Reviews</h3>
+                <div class="sidebar-widget animate-on-scroll" style="animation-delay: 0.1s;">
+                    <h3><i class="fas fa-star"></i> Top Reviews</h3>
                     <div class="review">
-                        <p>"Absolutely the best pizza in town. The crust was perfect!"</p>
-                        <small>- Priya S.</small>
+                        <p>"The Galaxy Supreme is out of this world! Best pizza I've had in ages."</p>
+                        <small>- Anjali P.</small>
                     </div>
                      <div class="review">
-                        <p>"Great atmosphere and friendly staff. Will definitely come back."</p>
-                        <small>- Rohan M.</small>
+                        <p>"Fast delivery and the food was still hot. The garlic bread is a must-try."</p>
+                        <small>- Vikram R.</small>
                     </div>
                 </div>
             </aside>
         </div>
     </main>
     
+    <!-- Footer is the same as other pages -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section about">
-                <h3 class="logo-text"><i class="fas fa-utensils"></i> FoodFleet</h3>
-                <p>Your one-stop destination for discovering and ordering from the best restaurants. We are committed to quality and speed.</p>
+                <h3 class="logo-text"><i class="fa-solid fa-rocket"></i> FoodFleet</h3>
+                <p>The future of food delivery is here. Fast, reliable, and always delicious.</p>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/dhruv_s_panchal?igsh=MXM1ajB0bmcwOW1mbg=="><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dhruv_s_panchal?igsh=MXM1ajB0bmcwOW1mbg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/DhruvSPanchal?s=08"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-section links">
-                <h3>Quick Links</h3>
+                <h3>Explore</h3>
                 <ul>
-                    <li><a href="#">Promotions</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Become a Rider</a></li>
+                    <li><a href="#">Add Your Restaurant</a></li>
                 </ul>
             </div>
             <div class="footer-section contact-form">
-                <h3>Contact Us</h3>
+                <h3>Join our Newsletter</h3>
                 <form action="#">
-                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-                    <textarea rows="2" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email...">
+                    <button type="submit" class="btn btn-gradient">
+                        Subscribe
                     </button>
                 </form>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 FoodFleet | Made with <i class="fas fa-heart"></i> in Ahmedabad, India
+            &copy; 2025 FoodFleet | Designed in Ahmedabad, India with <i class="fas fa-heart"></i>
         </div>
     </footer>
     <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
     <script src="script.js"></script>
 </body>
 </html>
